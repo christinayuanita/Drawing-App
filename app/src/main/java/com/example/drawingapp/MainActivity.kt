@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         drawing_view.setSizeForBrush(20.toFloat())
+        
 
         mImageButtonCurrentPaint = paintColors[1] as ImageButton
         mImageButtonCurrentPaint!!.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.palette_pressed))
@@ -42,6 +43,10 @@ class MainActivity : AppCompatActivity() {
             }else{
                 requestStoragePermission()
             }
+        }
+
+        undoBtn.setOnClickListener {
+            drawing_view.onClickUndo()
         }
     }
 

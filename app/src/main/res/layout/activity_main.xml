@@ -157,6 +157,16 @@
             />
 
         <ImageButton
+            android:id="@+id/undoBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_undo"
+            android:contentDescription="undo image"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            />
+
+        <ImageButton
             android:id="@+id/brushBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
