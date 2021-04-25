@@ -22,7 +22,6 @@
             android:id="@+id/backgroundImg"
             android:scaleType="centerCrop"
             android:contentDescription="background_image"
-            android:src="@drawable/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
         
